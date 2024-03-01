@@ -1,0 +1,144 @@
+
+<html>
+
+<head>
+    <title>SRM University Haryana - Exam Results</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <style>
+        .blink {
+            animation: blink 1s steps(5, start) infinite;
+            background-color: #ffff66;
+        }
+
+        @keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
+
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .dynaColorTR1 {
+            BACKGROUND-COLOR: #E6F0F5;
+        }
+
+        .dynaColorTR2 {
+            BACKGROUND-COLOR: #CCE0EB;
+        }
+
+        .login-container {
+            background-color: #246BB2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #E6F0F5;
+        }
+
+        input.submit {
+            background-color: #297ACC;
+            color: #ffffff;
+            moz-border-radius: 5px;
+            width: 90px;
+            /background-image:"../../resources/Image/submit1.gif";
+        }
+
+        input.submit:hover {
+            cursor: pointer;
+            color: yellow;
+            width: 90px;
+            moz-border-radius: 5px;
+        }
+
+        table.resultTable {
+            moz-border-radius: 10px;
+
+            width: 100%;
+            background-color:#9AB4CB;
+            background-color: #246BB2;
+        }
+    </style>
+</head>
+
+<body style="background: white;">
+
+    <div class="container">
+        <div class="row">
+            &nbsp;
+        </div>
+        <div class="row">
+            <div class="col-md-3" align="center">
+                <img src="Screenshot 2023-08-22 154527.png" height="100px;">
+            </div>
+            <div class="col-md-9" align="center">
+                <table>
+                    <tr>
+                        <td align="center">
+
+                            <p style="font-weight: bold; font-size: 21pt;">
+                                <font style="font-weight: bold; font-size: 18pt;">SRM UNIVERSITY, DELHI-NCR, SONEPAT
+                                    (HARYANA)</font><br>
+                                <font style="font-size: 9pt;">(Established under Haryana Private Universities Act 2006
+                                    as amended by act 8 of 2013)</font><br>
+                                <font style="font-size: 10pt;">Plot No.39, Rajiv Gandhi Education City, PS.Rai,
+                                    Sonepat-Haryana 131029</font><br>
+                                <font style="font-size: 10pt;">Phone : 0130-2121214, 15 Website :
+                                    www.srmuniversity.ac.in</font><br>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="login-container">
+            <form id="loginForm">
+                <label for="username"> Enter Register Number </label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">Date of Birth (DD/MM/YYYY) </label>
+                <input type="text" id="date" name="date" required><br><br>
+
+<input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+        <TABLE id="table3" name="table1" cellpadding='5' cellspacing='2' width="100%">
+            <TR style="FONT-STYLE: italic;color:#396A92;FONT-FAMILY: arial;FONT-SIZE: 12px">
+                <TD align="center">Powered By <b>eVarsity</b></TD>
+            </TR>
+            <TR style="FONT-STYLE: normal;FONT-FAMILY: arial;color:#396A92;FONT-SIZE: 12px;">
+                <TD align="center">Developed By <a href="http://www.firstlineinfotech.com/fipl/" target="_blank"
+                        style="color: #396A92">Firstline Infotech Pvt Ltd, Chennai</a></TD>
+            </TR>
+        </TABLE>
+    </div>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var date = document.getElementById("date").value;
+
+            // Replace the following with your actual login validation logic
+            if (username === "10321210046" && date === "07/11/2002") {
+                // Redirect to a new page upon successful login
+                window.location.href = "SRM University Haryana - Exam Results.html";
+            } else {
+                alert("Login failed. Please check your credentials.");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
